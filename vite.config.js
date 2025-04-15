@@ -21,5 +21,6 @@ export default defineConfig({
   },
   css: {
     devSourcemap: true
-  }
+  },
+  base: '/arcBlog1/',
 }) 
