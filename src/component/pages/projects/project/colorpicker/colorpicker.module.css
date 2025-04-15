@@ -1,0 +1,29 @@
+.colorpicker-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.colorpicker-p{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.colorpicker-display{
+    border: 1px solid var(--color-primary);
+    transition: all 0.3s ease;
+    border-radius: 20px;
+}
+.colorpicker-display:hover{
+    box-shadow: 0 0 12px var(--color-hover);
+}
+.colorpicker-label{
+    margin-top: 35px;
+}
+.colorpicker-input1{
+    border-radius: 20px;
+    margin: 10px 30px;
+    transition: all 0.3s ease;
+}
+.colorpicker-input1:hover{
+    box-shadow: 0 0 10px var(--color-hover);
+}

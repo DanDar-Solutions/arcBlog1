@@ -1,0 +1,23 @@
+.clock-container{
+    display: flex;
+    flex-direction: column;
+}
+.span1{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: monospace;
+
+    background: linear-gradient(90deg, #00e1ff, #001aff);
+    background-size: 200%;
+    background-position: left;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px var(--color-primary);
+    transition: background-position 0.5s ease, text-shadow 1s ease;
+    cursor: default;
+}
+.span1:hover {
+    background-position: left;
+    text-shadow: 0 0 20px var(--color-hover);
+  }

@@ -1,0 +1,17 @@
+:root{
+    --color-primary: #002fff;
+    --color-background: #000000;
+    --color-hover: #00aeff;
+
+
+    --font-family: 'Arial, sans-serif';
+}
+body{
+    background-color: var(--color-background);
+    color: var(--color-primary);
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
+} 

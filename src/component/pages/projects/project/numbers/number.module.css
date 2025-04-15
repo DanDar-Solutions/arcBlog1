@@ -1,0 +1,36 @@
+.h21{
+text-align: center;
+font-size: 40px;
+cursor: default;
+}
+.span1 {
+    background: linear-gradient(90deg, #00e1ff, #001aff);
+    background-size: 200%;
+    background-position: left;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px var(--color-primary);
+    transition: background-position 0.5s ease, text-shadow 1s ease;
+    cursor: default;
+  }
+  
+.span1:hover {
+    background-position: right;
+    text-shadow: 0 0 20px var(--color-hover);
+  }
+  
+.cool-btn{
+    height: 30px;
+    background-color: #000000;
+    border: 2px solid #00fff7;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: rgb(255, 255, 255);
+    margin: 5px;
+    font-size: 20px;
+} 
+.cool-btn:hover{
+    box-shadow: 0 0 30px var(--color-hover);
+    transform: scale(1.1);
+}

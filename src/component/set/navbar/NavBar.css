@@ -1,0 +1,134 @@
+.Navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    transition: all 0.3s ease;
+    background-color:var(--background-color);
+    box-shadow: 0 0 20px var(--color-primary);
+
+    position: relative;
+}
+.Navbar:hover{
+    box-shadow: 0 1px 10px var(--color-hover);
+}
+.Logo{
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.Logo img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    vertical-align: middle;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    border: 2px solid var(--color-primary);
+}
+.Logo img:hover{
+    border: 2px solid var(--color-hover);
+    transform: scale(1.2);
+    box-shadow: 0 0 30px var(--color-hover);
+}
+.Options{
+    font-family:Arial, sans-serif;
+}
+.Options a{
+    text-decoration: none;
+    color: var(--color-primary);
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    padding: 27px 45px;
+}
+.Options a:hover{
+    box-shadow: 0 1px 10px var(--color-hover);
+    color: rgb(0, 255, 255);
+}
+
+
+
+
+/***********************************************************************************/
+
+.login-container{
+    margin: 20px 35px;
+}
+.cool-login-btn {
+    padding: 10px 20px;
+    border: 1px solid var(--color-primary);
+    background: var(--background-color); /* black */
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1;
+  }
+.cool-login-btn:hover{
+  border: 1px solid var(--color-hover);
+  box-shadow: 0 0 20px var(--color-hover);
+}
+.cool-login-btn:active{
+    color: black;
+    box-shadow: 0 0 5px var(--color-hover);
+}
+.login-container {
+  position: relative;
+}
+
+.login-box {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: #000000;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 200px;
+  animation: fadeIn 0.3s ease;
+}
+
+.login-h3{
+  color: white;
+  text-align: center;
+}
+.login-box .login-input {
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--color-primary);
+  background-color: var(--background-color);
+}
+.login-box .login-input:focus {
+  outline: none;
+  border: 1px solid var(--color-hover);
+  box-shadow: 0 0 20px var(--color-hover);
+}
+
+.signUp-btn, .submit-btn {
+  background: #000000;
+  color: rgb(255, 255, 255);
+  border: 1px solid var(--color-primary);
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.signUp-btn:hover, .submit-btn:hover{
+  border: 1px solid var(--color-hover);
+  box-shadow: 0 0 10px var(--color-hover);
+}
+
+
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(-10px);}
+  to {opacity: 1; transform: translateY(0);}
+}
