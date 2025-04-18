@@ -1,14 +1,9 @@
 import './NavBar.css'
 import { Link } from 'react-router-dom'
-import React, { useState } from 'react'
+import React from 'react'
+import AccountModule from '../account/AccountModule'
 
 function NavBar() {
-    const [showLogin, setShowLogin] = useState(false);
-  
-    function toggleLogin() {
-      setShowLogin(!showLogin);
-    }
-  
     return (
       <div className="Navbar">
         <div className="Logo">
@@ -22,18 +17,8 @@ function NavBar() {
           <Link to="/customize">Customize</Link>
         </div>
   
-        {/* 🔽 This is where your login button and box go */}
         <div className="login-container">
-          <button className='cool-login-btn' onClick={toggleLogin}>login</button>
-          {showLogin && (
-            <div className="login-box">
-              <h3 className='login-h3'>Login</h3>
-              <input className='login-input' type="text" placeholder="Username" />
-              <input className='login-input' type="password" placeholder="Password" />
-              <button className="submit-btn" >Submit</button>
-              <button className="signUp-btn" >Sign up</button>
-            </div>
-          )}
+          <AccountModule />
         </div>
       </div>
     );

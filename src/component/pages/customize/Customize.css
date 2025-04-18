@@ -1,0 +1,170 @@
+.customize-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  color: #fff;
+}
+
+.customize-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: var(--color-primary);
+  text-align: center;
+}
+
+.customize-container p {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+
+.customize-section {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 30px;
+  border: 1px solid var(--color-primary);
+}
+
+.customize-section h2 {
+  color: var(--color-primary);
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  border-bottom: 1px solid var(--color-primary);
+  padding-bottom: 10px;
+}
+
+.theme-preview {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.current-theme {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 15px;
+  border: 2px solid white;
+}
+
+.current-theme-name {
+  font-size: 1rem;
+}
+
+.current-selection {
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.customize-options {
+  position: relative;
+}
+
+.theme-btn,
+.language-btn,
+.reset-btn {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.theme-btn:hover,
+.language-btn:hover,
+.reset-btn:hover {
+  background-color: var(--color-primary);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.options-dropdown {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 1px solid var(--color-primary);
+  border-radius: 5px;
+  padding: 10px;
+  z-index: 100;
+  width: 200px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.theme-option,
+.language-option {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border-radius: 3px;
+}
+
+.theme-option:hover,
+.language-option:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.theme-color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 1px solid white;
+}
+
+.reset-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.reset-btn {
+  background-color: rgba(255, 0, 0, 0.2);
+  border-color: rgba(255, 0, 0, 0.5);
+  color: rgba(255, 0, 0, 0.8);
+}
+
+.reset-btn:hover {
+  background-color: rgba(255, 0, 0, 0.5);
+  color: white;
+}
+
+.ai-attribution {
+  margin-top: 40px;
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid var(--color-primary);
+}
+
+.ai-attribution p {
+  color: var(--color-hover);
+  font-size: 0.9rem;
+  font-style: italic;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .customize-container h1 {
+    font-size: 2rem;
+  }
+  
+  .customize-section {
+    padding: 15px;
+  }
+  
+  .theme-btn,
+  .language-btn,
+  .reset-btn {
+    width: 100%;
+  }
+  
+  .options-dropdown {
+    width: 100%;
+  }
+}

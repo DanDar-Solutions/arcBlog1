@@ -3,11 +3,15 @@ import ColorPicker from './project/colorpicker/colorpicker.jsx';
 import Numbers from "./project/numbers/number.jsx";
 import ToDoList from "./project/todolist/todolist.jsx";
 import DigitalClock from './project/digitalclock/digitalclock.jsx';
-
+import StopWatch from "./project/StopWatch/StopWatch.jsx";
 function Projects(){
     return(
         <>
         <div className={styles["container"]}>
+            <div className={styles["projects-container"]}>
+                <h1 className={styles['h11']}>StopWatch</h1>
+                <StopWatch/>
+            </div>
             <div className={styles["projects-container"]}>
                 <h1 className={styles['h11']}>DigitalClock</h1>
                 <DigitalClock/>
