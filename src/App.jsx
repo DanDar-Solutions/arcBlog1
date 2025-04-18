@@ -10,8 +10,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
 
 function App(){
+    // Get the base URL from environment or use '/arcBlog1/' for GitHub Pages
+    const basename = import.meta.env.BASE_URL || '/arcBlog1/';
+    
     return(
-        <Router>
+        <Router basename={basename}>
             <div className="app-wrapper">
                 <NavBar />
                 <main className="main-content">
