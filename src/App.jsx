@@ -6,15 +6,12 @@ import Projects from "./component/pages/projects/Projects.jsx"
 import Customize from "./component/pages/customize/Customize.jsx"
 import About from "./component/pages/about/About.jsx"
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
 
 function App(){
-    // Get the base URL from environment or use '/arcBlog1/' for GitHub Pages
-    const basename = import.meta.env.BASE_URL || '/arcBlog1/';
-    
     return(
-        <Router basename={basename}>
+        <Router>
             <div className="app-wrapper">
                 <NavBar />
                 <main className="main-content">
